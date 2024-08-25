@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: Gilroy;
+    src: url(Assets/gilroy/Gilroy-Black.ttf);
+}
+@font-face{
+    font-family: monument;
+    src: url(Assets/monumentextended-freeforpersonaluse/MonumentExtended-FreeForPersonalUse/MonumentExtended-Regular.otf);
+}
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    background-color: #AB8F97;
+    display: flex;
+}
+.part1{
+    width: 26%;
+    height: 100%;
+}
+.part2{
+    width: 64%;
+    height: 100%;
+    background-color: blue;
+    background-image: url(https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+}
+.part2 .overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #635e5f42;
+}
+.part3{
+    width: 10%;
+    height: 100%;
+}
+.text-div{
+    height: 310px;
+    width: 400px;
+    position: absolute;
+    left: 7%;
+    top: 50%;
+    transform: translate(0 , -50%);
+}
+.text-div h1{
+    font-family: monument;
+    font-size: 95px;
+    letter-spacing: 8px;
+    font-weight: 800;
+    line-height: 78px;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+.small-image-div{
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(0 , -50%);
+    background-color: aqua;
+    background-image: url(https://images.unsplash.com/photo-1526510747491-58f928ec870f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+}
+.vertical-text{
+    position: absolute;
+    transform: rotate(90deg);
+    transform-origin: 0 0;
+    right: -50%;
+    top: -6%;
+    z-index: 5;
+    /* width: 100%; */
+    /* background-color: red; */
+}
+.vertical-text h1{
+    font-weight: 800;
+    font-family: monument;
+    font-size: 70px; 
+    letter-spacing:10px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #fff;
+}
